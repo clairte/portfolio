@@ -6,8 +6,11 @@ export default {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        mono: ['Courier Prime', 'monospace'],
+      },
       colors: {
-        primary: '#C9D1A5',
+        primary: '#F9F2E4',
         secondary: '#537E72',
         accent: '#9CC97F',
       },
