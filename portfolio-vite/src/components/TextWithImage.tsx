@@ -9,7 +9,7 @@ interface TextWithImageProps {
 const TextWithImage = ({ photoPosition = 'left', photo, text }: TextWithImageProps) => {
     const isLeft = photoPosition === 'left'; 
     return (
-        <div className="flex flex-col md:flex-row gap-32 items-center">
+        <div className="flex flex-col md:flex-row gap-32 items-center justify-center px-4">
             {isLeft && photo}
             {text}
             {!isLeft && photo}
