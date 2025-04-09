@@ -1,3 +1,5 @@
+// basic text block component with title, bullets, and children
+
 interface TextBlockProps {
     title?: string; 
     bullets?: string[]; 
