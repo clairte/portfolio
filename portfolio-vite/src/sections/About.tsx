@@ -59,7 +59,7 @@ const About = () => {
                   Reach out if you'd like to chat!
                 </p>
               </TextBlock>
-              <div className="flex gap-4 pt-2">
+              <div className="flex flex-wrap gap-4 pt-2">
                 <LinkButton href="https://github.com/clairte" label="GitHub" />
                 <LinkButton href="https://www.linkedin.com/in/claire-xu-a29420164/" label="LinkedIn" />
                 <LinkButton href="/resume-fullstack.pdf" label="Resume" />

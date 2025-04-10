@@ -41,8 +41,8 @@ const SWE = () => {
         
 
         {/* Project 2*/}
-        <div className="flex justify-center">
-          <FadeInWhenVisible>
+        <FadeInWhenVisible>
+          <div className="flex justify-center">
             <ProjectCard 
               title="TikTok Audio/Video - Software Engineer Intern"
               locationTime="San Jose, CA • Summer 2023"
@@ -50,10 +50,10 @@ const SWE = () => {
               media={
                 <div className="flex flex-col md:flex-row gap-6 items-start">
                   {/* images section */}
-                  <div className="flex gap-20">
-                    <img src={tiktokUpload} alt="tiktok-upload" className="w-44 md:w-52 rounded-xl shadow-sm"/>
-                    <img src={tiktokWaiting} alt="tiktok-waiting" className="w-44 md:w-52 rounded-xl shadow-sm"/>
-                    <div className="flex flex-col items-center justify-center">
+                  <div className="flex flex-wrap gap-16">
+                    <img src={tiktokUpload} alt="tiktok-upload" className="w-40 md:w-52 h-auto object-contain rounded-xl shadow-sm"/>
+                    <img src={tiktokWaiting} alt="tiktok-waiting" className="w-40 md:w-52 rounded-xl shadow-sm"/>
+                    <div className="flex flex-col items-center justify-center max-w-[18rem]">
                       <img 
                         src={phoneDoodle} 
                         alt="duck-doodle" 
@@ -69,12 +69,12 @@ const SWE = () => {
             >
               <p> Reduced upload latency by ~200ms for android devices by replacing Java encoder API with faster C++ encoder APIs</p>
             </ProjectCard>
-          </FadeInWhenVisible>
-        </div>
+          </div>
+        </FadeInWhenVisible>
         
         {/* Project 3*/}
-        <div className="flex justify-center">
-          <FadeInWhenVisible>
+        <FadeInWhenVisible>
+          <div className="flex justify-center">
             <ProjectCard
               title="Homeless Simulator - Best WebApp" 
               locationTime="Los Angeles, CA • QwerHacks 2023"
@@ -85,7 +85,7 @@ const SWE = () => {
                     <img
                       src={homeless}
                       alt="Homeless Simulator Screenshot"
-                      className="max-w-[800px] max-h-[600px] rounded-xl shadow-sm items-center"
+                      className="w-64 sm:w-80 md:w-[48rem] lg:w-[60rem] h-auto object-contain max-w-[800px] max-h-[600px] rounded-xl shadow-sm items-center"
                     />
                   </div>
                   <LinkButton href="https://github.com/clairte" label="→ Visit Homeless Simulator" />
@@ -96,8 +96,8 @@ const SWE = () => {
               Multiple endings... All depends on you... </p>
               <p> Best Webapp of Housing Track at QwerHacks 2023 </p>
             </ProjectCard>
-          </FadeInWhenVisible>
-        </div>
+          </div>
+        </FadeInWhenVisible>
         {/* Spacer with doodle */}
       <FadeInWhenVisible>
         <div className="relative h-[20rem] w-full flex flex-col items-center justify-center space-y-4">

@@ -39,7 +39,7 @@ const AnimatedText = ({ text, delay = 0, className }: AnimatedTextProps) => {
     // render a motion.span using child animation for each char 
     return (
         <motion.div 
-            className={`${className ?? ''} whitespace-pre-line leading-snug`}
+            className={`${className ?? ''} whitespace-pre-line leading-snug text-center max-w-[90vw] mx-auto break-words`}
             variants={container}
             initial="hidden"
             animate="visible"
