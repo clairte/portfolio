@@ -15,7 +15,7 @@ const Contact = () => {
           <div className="w-1/3 border-t border-gray-300" /> 
         </div>
         {/* Bottom Section */}
-        <div className="flex flex-col lg:flex-row items-center justify-between gap-12">
+        <div className="flex flex-col lg:flex-row items-center justify-between gap-12 w-full max-w-5xl px-4 mx-auto">
           <div className="text-sm text-gray-500 text-center lg:text-left max-w-md">
             <p>Website developed by Claire Xu using React, Tailwind CSS, and Vite. With some excessive bothering of ChatGPT</p>
             <p>Doodle icons from Pablo Stanley's Miroodles collection</p>

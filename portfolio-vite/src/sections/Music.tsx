@@ -27,78 +27,85 @@ const Music = () => {
 
       {/* Music Project 1 */}
       <FadeInWhenVisible>
-        <ProjectCard
-          title="Ferris Wheels Step Over Seasons (EP demo)" 
-          locationTime="Released 2023"
-          media={
-            <div className="flex flex-col md:flex-row gap-6 items-center justify-center">
-              <img 
-                src={studioClaire}
-                alt="ferris-wheels"
-                className="w-52 rounded-xl shadow-sm"
-                loading="lazy"
-              />
-              <div className="space-y-4 flex-1">
-              <iframe 
-                width="100%" 
-                height="300" 
-                allow="autoplay" 
-                loading="lazy"
-                src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1227122296&color=%2390b7bf&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"
-              />
+        <div className="flex justify-center">
+          <ProjectCard
+            title="Ferris Wheels Step Over Seasons (EP demo)" 
+            locationTime="Released 2023"
+            media={
+              <div className="flex flex-col md:flex-row gap-6 items-center justify-center">
+                <img 
+                  src={studioClaire}
+                  alt="ferris-wheels"
+                  className="w-52 rounded-xl shadow-sm"
+                />
+                <div className="space-y-4 flex-1">
+                <iframe 
+                  width="100%" 
+                  height="300" 
+                  allow="autoplay" 
+                  loading="lazy"
+                  src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1227122296&color=%2390b7bf&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"
+                />
+                </div>
               </div>
-            </div>
-          }
-        >
-          <p>
-            My first demo EP, genres range from Bossa Nova, alt-RnB, and pop. 
-          </p>
-        </ProjectCard>
+            }
+          >
+            <p>
+              My first demo EP, genres range from Bossa Nova, alt-RnB, and pop. 
+            </p>
+          </ProjectCard>
+        </div>
       </FadeInWhenVisible>
+      
 
       {/* Music Project 2 */}
       <FadeInWhenVisible>
-          <ProjectCard
-            title="Human Orchestra - A cappella Collections"
-            locationTime="2020 - 2023"
-            media={
-              <div className="flex flex-col md:flex-row gap-6 items-start">
-              <img 
-                src={humanOrchestra}
-                alt="human-orchestra"
-                className="w-52 rounded-xl shadow-sm"
-                loading="lazy"
-              />
-              <div className="space-y-8 flex-1 py-2">
-              <iframe 
-                width="100%" 
-                height="120" 
-                allow="autoplay" 
-                loading="lazy"
-                src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1158625192&color=%2390b7bf&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"
-              />
-              <iframe 
-                width="100%" 
-                height="120" 
-                allow="autoplay" 
-                loading="lazy"
-                src="https://open.spotify.com/embed/track/0O6jm4QLPOCauOxRLwoFdh?utm_source=generator&theme=0"
-              />
+        <div className="flex justify-center">
+            <ProjectCard
+              title="Human Orchestra - A cappella Collections"
+              locationTime="2020 - 2023"
+              media={
+                <div className="flex flex-col md:flex-row gap-6 items-start">
+                <img 
+                  src={humanOrchestra}
+                  alt="human-orchestra"
+                  className="w-52 rounded-xl shadow-sm"
+                />
+                <div className="space-y-8 flex-1 py-2">
+                <iframe 
+                  width="100%" 
+                  height="120" 
+                  allow="autoplay" 
+                  loading="lazy"
+                  src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1158625192&color=%2390b7bf&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"
+                />
+                <iframe 
+                  width="100%" 
+                  height="120" 
+                  allow="autoplay" 
+                  loading="lazy"
+                  src="https://open.spotify.com/embed/track/0O6jm4QLPOCauOxRLwoFdh?utm_source=generator&theme=0"
+                />
+                </div>
               </div>
-            </div>
-            }
-          >
-          </ProjectCard>
+              }
+            >
+            </ProjectCard>
+        </div>
       </FadeInWhenVisible>
+      
 
       {/* Music Project 3 */}
       <FadeInWhenVisible>
-          <ProjectCard
-            title="100 Song Challenge"
-          >
-            Coming soon...
-          </ProjectCard>
+        <div className="flex justify-center">
+            <ProjectCard
+              title="100 Song Challenge"
+            >
+              Coming soon...
+            </ProjectCard>
+        </div>
       </FadeInWhenVisible>
+     
 
       {/* Spacer with doodle */}
       <FadeInWhenVisible>
