@@ -47,8 +47,8 @@ const SWE = () => {
               <div className="flex flex-col md:flex-row gap-6 items-start">
                 {/* images section */}
                 <div className="flex gap-20">
-                  <img src={tiktokUpload} alt="tiktok-upload" className="w-44 md:w-52 rounded-xl shadow-sm"/>
-                  <img src={tiktokWaiting} alt="tiktok-waiting" className="w-44 md:w-52 rounded-xl shadow-sm"/>
+                  <img src={tiktokUpload} alt="tiktok-upload" className="w-44 md:w-52 rounded-xl shadow-sm" loading="lazy"/>
+                  <img src={tiktokWaiting} alt="tiktok-waiting" className="w-44 md:w-52 rounded-xl shadow-sm" loading="lazy"/>
                   <div className="flex flex-col items-center justify-center">
                     <img 
                       src={phoneDoodle} 
@@ -80,6 +80,7 @@ const SWE = () => {
                     src={homeless}
                     alt="Homeless Simulator Screenshot"
                     className="max-w-[800px] max-h-[600px] rounded-xl shadow-sm items-center"
+                    loading="lazy"
                   />
                 </div>
                 <LinkButton href="https://github.com/clairte" label="→ Visit Homeless Simulator" />

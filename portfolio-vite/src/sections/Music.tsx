@@ -36,12 +36,14 @@ const Music = () => {
                 src={studioClaire}
                 alt="ferris-wheels"
                 className="w-52 rounded-xl shadow-sm"
+                loading="lazy"
               />
               <div className="space-y-4 flex-1">
               <iframe 
                 width="100%" 
                 height="300" 
                 allow="autoplay" 
+                loading="lazy"
                 src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1227122296&color=%2390b7bf&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"
               />
               </div>
@@ -65,6 +67,7 @@ const Music = () => {
                 src={humanOrchestra}
                 alt="human-orchestra"
                 className="w-52 rounded-xl shadow-sm"
+                loading="lazy"
               />
               <div className="space-y-8 flex-1 py-2">
               <iframe 

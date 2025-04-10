@@ -12,12 +12,14 @@ const LayeredPhotos = ({ topSrc, bottomSrc, altTop, altBottom }: LayeredPhotosPr
                 <img
                     src={bottomSrc}
                     alt={altBottom}
+                    loading="lazy"
                     className="absolute w-full h-full object-cover rounded-xl rotate-6 shadow-lg translate-x-[5rem] translate-y-[-2rem]"
                     style={{ imageRendering: 'auto' }}
                 />
                 <img
                     src={topSrc}
                     alt={altTop}
+                    loading="lazy"
                     className="absolute w-full h-full object-cover rounded-xl rotate-[-8deg] shadow-xl translate-x-[-2rem] translate-y-[2rem] scale-[0.95]"
                     style={{ imageRendering: 'auto' }}
                 />
