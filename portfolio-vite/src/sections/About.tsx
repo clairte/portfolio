@@ -4,6 +4,7 @@ import TextWithImage from '../components/TextWithImage';
 import FadeInWhenVisible from '../components/FadeInWhenVisible';
 import LayeredPhotos from '../components/LayeredPhotos';
 import LinkButton from '../components/buttons/LinkButton';
+import QuackingDuck from '../components/QuackingDuck';
 
 import pizzaClaire from '../assets/about/pizza-claire.jpg'; 
 import gettyClaire from '../assets/about/getty-claire.jpg';
@@ -31,15 +32,7 @@ const About = () => {
 
       {/* Spacer with doodle */}
       <FadeInWhenVisible>
-        <div className="relative h-[36rem] w-full flex items-center justify-center">
-          <img 
-            src={duckDoodle}
-            alt="duck-doodle"
-            className="w-32 opacity-70 animate-wiggle transition-transform hover:scale-110"
-          />
-          <p className="top-12 text-lg text-gray-600 font-medium italic hover:scale-110"> just a duck </p>
-        </div>
-
+          <QuackingDuck />
       </FadeInWhenVisible>
 
       {/* Second About Block - Recap, Now and Next */}

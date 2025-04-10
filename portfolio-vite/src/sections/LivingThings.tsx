@@ -16,7 +16,7 @@ const LivingThings = () => (
         <p className="text-[0.9rem] italic text-gray-600 text-center mx-auto max-w-xl whitespace-pre-line leading-relaxed">
           Beings I share space with — they meow, swim, crawl, and stare into my soul.{"\n"}
           垫垫 [tjɛn tjɛn] Kat is an ADORABLE but crazy cat.{"\n"}
-          囡囡 [nan nan] Cabbage is my snake (since some are scared of snakes, flip to see){"\n"}
+          囡囡 [nan nan] Cabbage is our snake (since some are scared of snakes, flip to see){"\n"}
           Some guppies, danios, shrimps, and puffer in the water. 
         </p>
     </FadeInWhenVisible>
