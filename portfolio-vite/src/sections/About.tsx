@@ -5,9 +5,9 @@ import FadeInWhenVisible from '../components/FadeInWhenVisible';
 import LayeredPhotos from '../components/LayeredPhotos';
 import LinkButton from '../components/LinkButton';
 
-import pizzaClaire from '../assets/pizza-claire.jpg'; 
-import gettyClaire from '../assets/getty-claire.jpg';
-import guitarClaire from '../assets/guitar-claire.jpg';
+import pizzaClaire from '../assets/about/pizza-claire.jpg'; 
+import gettyClaire from '../assets/about/getty-claire.jpg';
+import guitarClaire from '../assets/about/guitar-claire.jpg';
 import duckDoodle from '../assets/doodles/miroodles-duck.png';
 
 

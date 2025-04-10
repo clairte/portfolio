@@ -2,9 +2,9 @@ import FadeInWhenVisible from '../components/FadeInWhenVisible';
 import ProjectCard from '../components/ProjectCard';
 import LinkButton from '../components/LinkButton';
 
-import tiktokUpload from '../assets/tiktok-cat-upload.png';
-import tiktokWaiting from '../assets/tiktok-cat-waiting.png';
-import homeless from '../assets/homeless.png'; 
+import tiktokUpload from '../assets/swe/tiktok-cat-upload.png';
+import tiktokWaiting from '../assets/swe/tiktok-cat-waiting.png';
+import homeless from '../assets/swe/homeless.png'; 
 import phoneDoodle from '../assets/doodles/miroodles-phone.png';
 
 
