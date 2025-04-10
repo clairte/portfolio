@@ -9,7 +9,6 @@ import QuackingDuck from '../components/QuackingDuck';
 import pizzaClaire from '../assets/about/pizza-claire.jpg'; 
 import gettyClaire from '../assets/about/getty-claire.jpg';
 import guitarClaire from '../assets/about/guitar-claire.jpg';
-import duckDoodle from '../assets/doodles/miroodles-duck.png';
 
 
 
