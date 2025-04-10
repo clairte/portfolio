@@ -5,16 +5,16 @@ import LinkButton from '../components/LinkButton';
 import tiktokUpload from '../assets/tiktok-cat-upload.png';
 import tiktokWaiting from '../assets/tiktok-cat-waiting.png';
 import homeless from '../assets/homeless.png'; 
-import phoneDoodle from '../assets/miroodles-phone.png';
+import phoneDoodle from '../assets/doodles/miroodles-phone.png';
 
 
 const SWE = () => {
   return (
     <section className="min-h-screen p-8 py-32 scroll-mt-24 space-y-8" id="swe">
       <FadeInWhenVisible>
-        <h1 className="text-center text-"> Software Engineering </h1>
+        <h1 className="text-center mb-2"> Software Engineering </h1>
         <p className="text-sm italic text-gray-600 text-center">
-          TLDR: read if you're lazy to download resume / this is a bit cooler.
+          read if you're lazy to download resume / this is a bit cooler.
         </p>
       </FadeInWhenVisible>
 
@@ -64,6 +64,7 @@ const SWE = () => {
           </ProjectCard>
         </FadeInWhenVisible>
 
+        {/* Project 3*/}
         <FadeInWhenVisible>
           <ProjectCard
             title="Homeless Simulator - Best WebApp" 

@@ -8,7 +8,7 @@ import LinkButton from '../components/LinkButton';
 import pizzaClaire from '../assets/pizza-claire.jpg'; 
 import gettyClaire from '../assets/getty-claire.jpg';
 import guitarClaire from '../assets/guitar-claire.jpg';
-import duckDoodle from '../assets/miroodles-duck.png';
+import duckDoodle from '../assets/doodles/miroodles-duck.png';
 
 
 
