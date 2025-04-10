@@ -41,3 +41,9 @@ body {
 .backface-hidden {
   backface-visibility: hidden;
 }
+
+.bg-paper-texture {
+  background-image: url('/textures/paper-fibers.png'); 
+  background-size: cover;
+  background-repeat: repeat;
+}

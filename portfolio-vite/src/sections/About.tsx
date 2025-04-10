@@ -3,7 +3,7 @@ import PhotoCard from '../components/PhotoCard';
 import TextWithImage from '../components/TextWithImage';
 import FadeInWhenVisible from '../components/FadeInWhenVisible';
 import LayeredPhotos from '../components/LayeredPhotos';
-import LinkButton from '../components/LinkButton';
+import LinkButton from '../components/buttons/LinkButton';
 
 import pizzaClaire from '../assets/about/pizza-claire.jpg'; 
 import gettyClaire from '../assets/about/getty-claire.jpg';

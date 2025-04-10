@@ -1,5 +1,5 @@
 import FadeInWhenVisible from "../components/FadeInWhenVisible";
-import LinkButton from "../components/LinkButton";
+import LinkButton from "../components/buttons/LinkButton";
 import ProjectCard from "../components/ProjectCard";
 
 import studioClaire from "../assets/music/studio-claire.jpg";

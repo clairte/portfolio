@@ -14,7 +14,7 @@ const LinkButton = ({ href, label }: LinkButtonProps) => {
             className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-secondary text-white hover:bg-accent transition-transform duration-300 shadow-md"
         >
             <ExternalLink size={18} />
-            <span>{label}</span>
+            <span className="text-center min-w-[6rem]">{label}</span>
         </a>
     )
 };

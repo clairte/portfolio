@@ -1,11 +1,12 @@
 import FadeInWhenVisible from '../components/FadeInWhenVisible';
 import ProjectCard from '../components/ProjectCard';
-import LinkButton from '../components/LinkButton';
+import LinkButton from '../components/buttons/LinkButton';
 
 import tiktokUpload from '../assets/swe/tiktok-cat-upload.png';
 import tiktokWaiting from '../assets/swe/tiktok-cat-waiting.png';
 import homeless from '../assets/swe/homeless.png'; 
 import phoneDoodle from '../assets/doodles/miroodles-phone.png';
+import hiDoodle from '../assets/doodles/miroodles-hi.png'; 
 
 
 const SWE = () => {
@@ -13,8 +14,10 @@ const SWE = () => {
     <section className="min-h-screen p-8 py-32 scroll-mt-24 space-y-8" id="swe">
       <FadeInWhenVisible>
         <h1 className="text-center mb-2"> Software Engineering </h1>
-        <p className="text-sm italic text-gray-600 text-center">
-          read if you're lazy to download resume / this is a bit cooler.
+        <p className="text-[0.9rem] italic text-gray-600 text-center mx-auto max-w-xl whitespace-pre-line leading-relaxed">
+          read if you're lazy to download resume / this is a bit cooler:{"\n"}
+          Coding is cool, building software is cooler. 
+          While I have most experience in backend development and primarily work on backend systems, I also love to sometimes dabble in frontend, product, and other parts of the software development process.
         </p>
       </FadeInWhenVisible>
 
@@ -88,6 +91,19 @@ const SWE = () => {
             <p> Best Webapp of Housing Track at QwerHacks 2023 </p>
           </ProjectCard>
         </FadeInWhenVisible>
+
+        {/* Spacer with doodle */}
+      <FadeInWhenVisible>
+        <div className="relative h-[20rem] w-full flex flex-col items-center justify-center space-y-4">
+          <img 
+            src={hiDoodle}
+            alt="hi-doodle"
+            className="w-32 opacity-70 animate-wiggle transition-transform hover:scale-110"
+          />
+          <p className="top-12 text-lg text-gray-600 font-medium italic hover:scale-110"> hi! </p>
+        </div>
+
+      </FadeInWhenVisible>
       </div>
     </section>
   );
