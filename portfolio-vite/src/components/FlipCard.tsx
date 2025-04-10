@@ -28,7 +28,6 @@ const FlipCard = ({ frontLabel, backImageSrc, alt }: FlipCardProps) => {
                     <img 
                         src={backImageSrc}
                         alt={alt}
-                        loading="lazy"
                         className="w-full h-full object-cover"
                     />
                 </div>
