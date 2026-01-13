@@ -22,7 +22,7 @@ const About = () => {
           text={
             <TextBlock title="About Me">
               <p> Hi there! My name is Claire 徐若彤 [ɕy̌ ʐûɔ tʰʊ̌ŋ].</p>
-              <p> I'm a full-stack software engineer, music producer, and singer-songwriter with a passion to create at the intersection of music and technology.</p>
+              <p> I'm a music producer, singer-songwriter, and full-stack software engineer with a passion to create at the intersection of music and technology.</p>
               <p> I like music, code, cats, and building cool things.</p>
             </TextBlock>
           }
@@ -51,11 +51,13 @@ const About = () => {
               <TextBlock>
                 <p> Some more background, I guess.</p>
                 <p> 
-                  Graduated fresh from UCLA in 2024 with a double degree in Linguistics & Computer Science (that's one degree) and Communications. 
-                  Since then, I've been a backend software engineer at TikTok Music for ~1yr, working on backend systems for music advertising.
+                  Graduated from UCLA in 2024 with a double degree in Linguistics & Computer Science (that's one degree) and Communications, then worked at TikTok Music as a backend engineer. 
                 </p>
                 <p>
-                  What now? I'm looking for a new challenge--reorienting my career towards music and tech, seeing where I can take myself using both technical, musical, and people skills. 
+                  After deciding I didn't want to spend my twenties climbing the ladder, I decided to leave and am now a freelance music producer and software engineer consultant for startups at CodeChef Consulting LLC. 
+                </p>
+                <p>
+                  I'm always looking for a new challenge--reorienting my career towards music and tech, seeing where I can take myself using both technical, musical, and people skills. 
                   Reach out if you'd like to chat!
                 </p>
               </TextBlock>

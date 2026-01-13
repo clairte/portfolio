@@ -12,8 +12,8 @@ function App() {
       <NavBar />
       <section id="home"><Home /></section>
       <section id="about"><About /></section>
-      <section id="swe"><SWE /></section>
       <section id="music"><Music /></section>
+      <section id="swe"><SWE /></section>
       <section id="living-things"><LivingThings /></section>
       <section id="contact"><Contact /></section>
     </div>
