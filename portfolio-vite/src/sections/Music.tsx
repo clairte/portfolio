@@ -1,10 +1,21 @@
 import FadeInWhenVisible from "../components/FadeInWhenVisible";
 import LinkButton from "../components/buttons/LinkButton";
 import ProjectCard from "../components/ProjectCard";
+import AudioThumbnail from "../components/AudioThumbnail";
 
 import studioClaire from "../assets/music/studio-claire.jpg";
 import humanOrchestra from "../assets/music/human-orchestra-2.jpg";
-import melonDoodle from "../assets/doodles/miroodles-melon.png"; 
+import melonDoodle from "../assets/doodles/miroodles-melon.png";
+
+// 100 Song Challenge assets
+import liuliAudio from "../assets/music/100-songs/audio/song 2 - 琉璃 (demo).mp3";
+import theCureAudio from "../assets/music/100-songs/audio/song 4 - the cure (demo).mp3";
+import fallAudio from "../assets/music/100-songs/audio/song 5 - fall (demo).mp3";
+import strangerAudio from "../assets/music/100-songs/audio/song 7 - stranger (demo).mp3";
+import liuliImg from "../assets/music/100-songs/images/liuli thumbnail.png";
+import theCureImg from "../assets/music/100-songs/images/the cure thumbnail.png";
+import fallImg from "../assets/music/100-songs/images/fall thumbnail.png";
+import strangerImg from "../assets/music/100-songs/images/stranger thumbnail.png"; 
 
 
 const Music = () => {
@@ -17,20 +28,74 @@ const Music = () => {
           Professionally, I interned at @ROOM4AStudio in China, a studio under Voice of China, and toplined over 10 songs for the studio song bank. 
           I also mix and master music, specializing in voice, using Pro Tools. 
         </p>
-        <div className="flex justify-center mt-4">
-          <LinkButton 
-            href="https://soundcloud.com/user-852192298/tracks" 
-            label="🎧 Check out My Music"
-          />
+      </FadeInWhenVisible>
+
+      {/* 100 Song Challenge */}
+      <FadeInWhenVisible>
+        <div className="flex justify-center">
+          <ProjectCard
+            title="What About Your Story?"
+            locationTime="100 Song Challenge for 100 Strangers • 2025 - Present"
+            media={
+              <div className="space-y-6">
+                {/* Audio thumbnail grid */}
+                <div className="flex flex-wrap justify-center gap-4">
+                  <AudioThumbnail
+                    imageSrc={strangerImg}
+                    audioSrc={strangerAudio}
+                    title="陌生人"
+                    subtitle=""
+                  />
+                  <AudioThumbnail
+                    imageSrc={fallImg}
+                    audioSrc={fallAudio}
+                    title="fall"
+                    subtitle=""
+                  />
+                  <AudioThumbnail
+                    imageSrc={theCureImg}
+                    audioSrc={theCureAudio}
+                    title="the cure"
+                    subtitle=""
+                  />
+                  <AudioThumbnail
+                    imageSrc={liuliImg}
+                    audioSrc={liuliAudio}
+                    title="琉璃"
+                    subtitle=""
+                  />
+                </div>
+
+                {/* Social media links */}
+                <div className="flex flex-wrap justify-center gap-4 pt-2">
+                  <LinkButton 
+                    href="https://xhslink.com/m/362uDgi4Nhm" 
+                    label="📕 小红书"
+                  />
+                  <LinkButton 
+                    href="https://v.douyin.com/Q0YIvO7co90/" 
+                    label="🎵 抖音"
+                  />
+                </div>
+              </div>
+            }
+          >
+            <p>
+              Through my social media account, I picked (and ongoing!) 100 strangers with 100 different stories to tell, 
+              and created unique customizable songwriting experience for each person. I showcase each song on my social 
+              media platform, including the background story and how I produce and mix each song from start to finish. Checkout 
+              my social media accounts for more details! These songs will be mixed and mastered to all music platforms soon.
+            </p>
+          </ProjectCard>
         </div>
       </FadeInWhenVisible>
 
-      {/* Music Project 1 */}
+      {/* Ferris Wheels EP */}
       <FadeInWhenVisible>
         <div className="flex justify-center">
           <ProjectCard
             title="Ferris Wheels Step Over Seasons (EP demo)" 
-            locationTime="Released 2023"
+            locationTime="Released 2022"
             media={
               <div className="flex flex-col md:flex-row gap-6 items-center justify-center">
                 <img 
@@ -95,17 +160,15 @@ const Music = () => {
       </FadeInWhenVisible>
       
 
-      {/* Music Project 3 */}
+      {/* Check out My Music button */}
       <FadeInWhenVisible>
         <div className="flex justify-center">
-            <ProjectCard
-              title="100 Song Challenge"
-            >
-              Coming soon...
-            </ProjectCard>
+          <LinkButton 
+            href="https://soundcloud.com/user-852192298/sets" 
+            label="🎧 Check out more of my music here!"
+          />
         </div>
       </FadeInWhenVisible>
-     
 
       {/* Spacer with doodle */}
       <FadeInWhenVisible>
@@ -117,7 +180,6 @@ const Music = () => {
           />
           <p className="top-12 text-lg text-gray-600 font-medium italic hover:scale-110"> [watermelon] </p>
         </div>
-
       </FadeInWhenVisible>
     </section>
   )

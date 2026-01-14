@@ -19,7 +19,7 @@ const Contact = () => {
           <div className="text-sm text-gray-500 text-center lg:text-left max-w-md">
             <p>Website developed by Claire Xu using React, Tailwind CSS, and Vite. With some excessive bothering of ChatGPT</p>
             <p>Doodle icons from Pablo Stanley's Miroodles collection</p>
-            <p className="mt-2">&copy; 2025 All rights reserved.</p>
+            <p className="mt-2">&copy; 2026 All rights reserved.</p>
 
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">

@@ -22,7 +22,22 @@ const SWE = () => {
       </FadeInWhenVisible>
 
       <div className="space-y-12">
-        {/* Project 1*/}
+        {/* Codechef Consulting */}
+        <div className="flex justify-center">
+          <FadeInWhenVisible>
+            <ProjectCard 
+              title="Codechef Consulting LLC - Junior Software Developer"
+              locationTime="Los Angeles, CA • April 2025 - Present"
+              skills="TypeScript • Next.js • React • React Native"
+            >
+              <p> • Consult for 5+ start-up oriented companies and build fullstack mobile and webapps across cutting-edge industries: AI, web3, music tech </p>
+              <p> • Design and revamp entire UI framework for Kalo, an exclusive RSVP event hosting platform for creators, artists, and entrepreneurs, conforming to iOS26 standards and latest webpage designs </p>
+              <p> • Building mobile and webapp for Moiio, a community based kpop fandom app </p>
+            </ProjectCard>
+          </FadeInWhenVisible>
+        </div>
+
+        {/* TikTok Music */}
         <div className="flex justify-center">
           <FadeInWhenVisible>
             <ProjectCard 
