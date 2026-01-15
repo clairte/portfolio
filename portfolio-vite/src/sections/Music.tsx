@@ -81,8 +81,8 @@ const Music = () => {
             }
           >
             <p>
-              Through my social media account, I picked (and ongoing!) 100 strangers with 100 different stories to tell, 
-              and created unique customizable songwriting experience for each person. I showcase each song on my social 
+              I am picking 100 strangers with 100 different stories to tell (contact to sign up!),
+              creating unique customizable songwriting experiences for each person. I showcase each song on my social 
               media platform, including the background story and how I produce and mix each song from start to finish. Checkout 
               my social media accounts for more details! These songs will be mixed and mastered to all music platforms soon.
             </p>
