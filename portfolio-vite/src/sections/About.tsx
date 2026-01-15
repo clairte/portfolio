@@ -62,9 +62,8 @@ const About = () => {
                 </p>
               </TextBlock>
               <div className="flex flex-wrap gap-4 pt-2">
-                <LinkButton href="https://github.com/clairte" label="GitHub" />
-                <LinkButton href="https://www.linkedin.com/in/claire-xu-a29420164/" label="LinkedIn" />
                 <LinkButton href="/resume-fullstack.pdf" label="Resume" />
+                <LinkButton href="https://soundcloud.com/user-852192298/tracks" label="Music" />
               </div>
             </div>
           }

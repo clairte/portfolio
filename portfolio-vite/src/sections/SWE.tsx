@@ -19,6 +19,9 @@ const SWE = () => {
           Coding is cool, building software is cooler. 
           While I have most experience in backend development and primarily work on backend systems, I also love to sometimes dabble in frontend, product, and other parts of the software development process.
         </p>
+        <div className="flex justify-center mt-4">
+          <LinkButton href="https://github.com/clairte" label="GitHub" />
+        </div>
       </FadeInWhenVisible>
 
       <div className="space-y-12">
