@@ -47,3 +47,36 @@ body {
   background-size: cover;
   background-repeat: repeat;
 }
+
+/* Glass effect utilities */
+.glass-button {
+  @apply backdrop-blur-md border border-white/20;
+  background: rgba(83, 126, 114, 0.65);
+  box-shadow: 
+    0 4px 16px rgba(83, 126, 114, 0.25),
+    inset 0 1px 0 rgba(255, 255, 255, 0.25);
+}
+
+.glass-button:hover {
+  background: rgba(83, 126, 114, 0.85);
+  box-shadow: 
+    0 6px 24px rgba(83, 126, 114, 0.35),
+    inset 0 1px 0 rgba(255, 255, 255, 0.35);
+  transform: translateY(-2px);
+}
+
+.glass-card {
+  @apply backdrop-blur-lg border border-white/30;
+  background: rgba(253, 250, 244, 0.7);
+  box-shadow: 
+    0 8px 32px rgba(0, 0, 0, 0.08),
+    inset 0 1px 0 rgba(255, 255, 255, 0.5);
+}
+
+.glass-nav {
+  @apply backdrop-blur-xl border border-white/15;
+  background: rgba(83, 126, 114, 0.75);
+  box-shadow: 
+    0 8px 32px rgba(0, 0, 0, 0.12),
+    inset 0 1px 0 rgba(255, 255, 255, 0.2);
+}

@@ -18,7 +18,7 @@ const CopyButton = ({ value, label }: CopyButtonProps) => {
   return (
     <button
       onClick={handleCopy}
-      className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-secondary text-white hover:bg-accent transition-transform duration-300 shadow-md"
+      className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass-button text-white transition-all duration-300"
     >
       <Copy size={18} />
       <span className="w-[5.5rem]">

@@ -6,20 +6,11 @@ interface ProjectCardProps {
     skills?: string; 
     children?: React.ReactNode; 
     media?: React.ReactNode; 
-    color?: 'primary' | 'light20' | 'light30' | 'light60' | 'light50'; 
 } 
 
-const colorVariants: Record<NonNullable<ProjectCardProps['color']>, string> = {
-    primary: 'bg-primary border border-gray-200',
-    light20: 'bg-[#faf5e9] border border-[#faf5e9]',     
-    light30: 'bg-[#fbf6ec] border border-[#fbf6ec]',    
-    light60: 'bg-[#fdfaf4] border border-[#fdfaf4]',    
-    light50: 'bg-[#fcf9f2] border border-[#fcf9f2]',   
-};
-
-const ProjectCard = ({ title, locationTime, skills, children, media, color = "light60" }: ProjectCardProps) => {
+const ProjectCard = ({ title, locationTime, skills, children, media }: ProjectCardProps) => {
     return (
-        <div className={`rounded-xl shadow-md p-6 space-y-4 max-w-4xl w-full transition-transform duration-300 hover:scale-[1.01] ${colorVariants[color]}`}>
+        <div className="rounded-xl glass-card p-6 space-y-4 max-w-4xl w-full transition-all duration-300 hover:scale-[1.01] hover:shadow-lg">
             <div className="space-y-1">
                 <h3 className="text-xl font-semibold">{title}</h3>
                 {locationTime && <p className="text-sm italic text-gray-500">{locationTime}</p>}
@@ -37,4 +28,4 @@ const ProjectCard = ({ title, locationTime, skills, children, media, color = "li
     );
 };
 
-export default ProjectCard; 
+export default ProjectCard;
