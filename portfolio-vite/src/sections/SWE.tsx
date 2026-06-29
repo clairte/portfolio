@@ -3,26 +3,43 @@ import ProjectCard from '../components/ProjectCard';
 import AppCarousel from '../components/AppCarousel';
 import LinkButton from '../components/buttons/LinkButton';
 
+import moiio from '../assets/swe/moiio.png';
+import kalo from '../assets/swe/kalo.png';
+import addwork from '../assets/swe/addwork.png';
+import saucerswap from '../assets/swe/saucerswap.png';
+
 const codechefApps = [
   {
     name: 'Moiio',
     description:
       'K-pop fan-community app (iOS/Android): Node.js + tRPC backend & React Native frontend — social feed, polls, Stripe Connect crowdfunding, and an MCP server for AI-assisted analytics.',
+    image: moiio,
+    href: 'https://www.moiio.co/#features',
+    fade: 'x' as const,
   },
   {
     name: 'Kalo',
     description:
       'events & creator platform (web): Next.js components surfacing AI (Gemini) creator-scoring modules, plus backend email services.',
+    image: kalo,
+    href: 'https://explore.joinkalo.com/',
+    fade: 'x' as const,
   },
   {
     name: 'AddWork',
     description:
       'field-service work-order SaaS (mobile + web): React Native / Express app with a multimodal Google Gemini pipeline that turns uploaded job-site video into structured estimates.',
+    image: addwork,
+    href: 'https://www.addwork.com/',
+    fade: 'x' as const,
   },
   {
     name: 'SaucerSwap',
     description:
       'non-custodial DeFi wallet & DEX on Hedera (mobile + web): biometric wallet, on-chain token swaps, and staking analytics.',
+    image: saucerswap,
+    href: 'https://www.saucerswap.finance/saucerswap-wallet',
+    fade: 'y' as const,
   },
 ];
 
@@ -40,8 +57,8 @@ const SWE = () => {
         <h1 className="text-center mb-2"> Software Engineering </h1>
         <p className="text-[0.9rem] italic text-gray-600 text-center mx-auto max-w-xl whitespace-pre-line leading-relaxed">
           read if you're lazy to download resume / this is a bit cooler:{"\n"}
-          Coding is cool, building software is cooler. 
-          While I have most experience in backend development and primarily work on backend systems, I also love to sometimes dabble in frontend, product, and other parts of the software development process.
+          Coding is cool, building software is cooler.
+          I'm a full-stack engineer working mainly in React Native, Expo, and Next.js, but I also have experience building large-scale backend systems in Go.
         </p>
         <div className="flex justify-center mt-4">
           <LinkButton href="https://github.com/clairte" label="GitHub" />

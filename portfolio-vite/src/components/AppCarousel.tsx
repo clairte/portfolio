@@ -1,10 +1,22 @@
 import { useRef } from 'react';
-import { ChevronLeft, ChevronRight } from 'lucide-react';
+import { ChevronLeft, ChevronRight, ExternalLink } from 'lucide-react';
 
 interface AppSlide {
   name: string;
   description: string;
+  image: string;
+  href: string;
+  /** Which axis has letterbox bars to melt the picture into.
+   *  'x' = bars left/right (tall image), 'y' = bars top/bottom (wide image). */
+  fade: 'x' | 'y';
 }
+
+// Single-axis fade so only the edges that sit against a letterbox bar dissolve;
+// the edges that reach the frame border stay crisp.
+const FADE_MASK: Record<AppSlide['fade'], string> = {
+  x: '[-webkit-mask-image:linear-gradient(to_right,transparent,black_12%,black_88%,transparent)] [mask-image:linear-gradient(to_right,transparent,black_12%,black_88%,transparent)]',
+  y: '[-webkit-mask-image:linear-gradient(to_bottom,transparent,black_12%,black_88%,transparent)] [mask-image:linear-gradient(to_bottom,transparent,black_12%,black_88%,transparent)]',
+};
 
 interface AppCarouselProps {
   apps: AppSlide[];
@@ -31,14 +43,52 @@ const AppCarousel = ({ apps }: AppCarouselProps) => {
             key={app.name}
             className="snap-center shrink-0 w-[85%] flex flex-col gap-3"
           >
-            {/* Picture placeholder (real screenshots added later) */}
-            <div className="aspect-video w-full rounded-xl border border-dashed border-gray-300 bg-white/40 flex items-center justify-center text-gray-400 text-sm text-center px-4">
-              {app.name} — screenshots coming soon
+            {/* Screenshot — contained in a fixed 16:9 frame so all slides stay
+                the same height regardless of the image's own aspect ratio.
+                A blurred copy of the same image fills the letterbox bars so they
+                glow with the image's own colors (ambient / Apple-Music style). */}
+            <div className="relative aspect-video w-full rounded-xl border border-white/30 overflow-hidden flex items-center justify-center">
+              {/* Layer 1 — ambient blurred fill for the letterbox bars (glows
+                  with the image's own colors) */}
+              <img
+                src={app.image}
+                alt=""
+                aria-hidden="true"
+                className="absolute inset-0 w-full h-full object-cover scale-110 blur-2xl brightness-90 saturate-150"
+              />
+              {/* Layer 2 — the SAME picture, same position (object-contain), only
+                  blurred. Sits directly under the sharp layer so the sharp edges
+                  melt into a blurred version of themselves, not the backdrop. */}
+              <img
+                src={app.image}
+                alt=""
+                aria-hidden="true"
+                className="absolute inset-0 w-full h-full object-contain scale-[1.03] blur-md"
+              />
+              {/* Layer 3 — sharp picture. Only the bar-side edges are masked so
+                  they dissolve into the blurred copy beneath; the edges that
+                  reach the frame border stay crisp. */}
+              <img
+                src={app.image}
+                alt={`${app.name} app screenshot`}
+                className={`relative w-full h-full object-contain ${FADE_MASK[app.fade]}`}
+                loading="lazy"
+              />
             </div>
             {/* One-line description */}
             <p className="text-base text-gray-800">
               • <span className="font-semibold">{app.name}</span> — {app.description}
             </p>
+            {/* Site link */}
+            <a
+              href={app.href}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-1.5 self-start text-sm text-secondary hover:underline underline-offset-4"
+            >
+              <ExternalLink size={15} />
+              Visit {app.name}
+            </a>
           </div>
         ))}
       </div>
