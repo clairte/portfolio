@@ -1,6 +1,30 @@
 import FadeInWhenVisible from '../components/FadeInWhenVisible';
 import ProjectCard from '../components/ProjectCard';
+import AppCarousel from '../components/AppCarousel';
 import LinkButton from '../components/buttons/LinkButton';
+
+const codechefApps = [
+  {
+    name: 'Moiio',
+    description:
+      'K-pop fan-community app (iOS/Android): Node.js + tRPC backend & React Native frontend — social feed, polls, Stripe Connect crowdfunding, and an MCP server for AI-assisted analytics.',
+  },
+  {
+    name: 'Kalo',
+    description:
+      'events & creator platform (web): Next.js components surfacing AI (Gemini) creator-scoring modules, plus backend email services.',
+  },
+  {
+    name: 'AddWork',
+    description:
+      'field-service work-order SaaS (mobile + web): React Native / Express app with a multimodal Google Gemini pipeline that turns uploaded job-site video into structured estimates.',
+  },
+  {
+    name: 'SaucerSwap',
+    description:
+      'non-custodial DeFi wallet & DEX on Hedera (mobile + web): biometric wallet, on-chain token swaps, and staking analytics.',
+  },
+];
 
 import tiktokUpload from '../assets/swe/tiktok-cat-upload.png';
 import tiktokWaiting from '../assets/swe/tiktok-cat-waiting.png';
@@ -28,14 +52,13 @@ const SWE = () => {
         {/* Codechef Consulting */}
         <div className="flex justify-center">
           <FadeInWhenVisible>
-            <ProjectCard 
+            <ProjectCard
               title="Codechef Consulting LLC - Junior Software Developer"
               locationTime="Los Angeles, CA • April 2025 - Present"
               skills="TypeScript • Next.js • React • React Native"
+              media={<AppCarousel apps={codechefApps} />}
             >
-              <p> • Consult for 5+ start-up oriented companies and build fullstack mobile and webapps across cutting-edge industries: AI, web3, music tech </p>
-              <p> • Design and revamp entire UI framework for Kalo, an exclusive RSVP event hosting platform for creators, artists, and entrepreneurs, conforming to iOS26 standards and latest webpage designs </p>
-              <p> • Building mobile and webapp for Moiio, a community based kpop fandom app </p>
+              <p> I build full-stack mobile & web apps for 5+ early-stage startups — a few of them: </p>
             </ProjectCard>
           </FadeInWhenVisible>
         </div>

@@ -43,9 +43,18 @@ body {
 }
 
 .bg-paper-texture {
-  background-image: url('/textures/paper-fibers.png'); 
+  background-image: url('/textures/paper-fibers.png');
   background-size: cover;
   background-repeat: repeat;
+}
+
+/* Hide scrollbar (used by horizontal carousels with arrow controls) */
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
 }
 
 /* Glass effect utilities */
