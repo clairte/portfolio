@@ -34,7 +34,7 @@ const Music = () => {
       <FadeInWhenVisible>
         <div className="flex justify-center">
           <ProjectCard
-            title="What About Your Story?"
+            title="The 100 Stories Collection"
             locationTime="100 Song Challenge for 100 Strangers • 2025 - Present"
             media={
               <div className="space-y-6">
@@ -83,8 +83,49 @@ const Music = () => {
             <p>
               I am picking 100 strangers with 100 different stories to tell (contact to sign up!),
               creating unique customizable songwriting experiences for each person. I showcase each song on my social 
-              media platform, including the background story and how I produce and mix each song from start to finish. Checkout 
+              media platform (available only in Mandarin Chinese at the moment), including the background story and how I produce and mix each song from start to finish. Checkout 
               my social media accounts for more details! These songs will be mixed and mastered to all music platforms soon.
+            </p>
+          </ProjectCard>
+        </div>
+      </FadeInWhenVisible>
+
+      {/* Latest Single — On the Virtues of Women */}
+      <FadeInWhenVisible>
+        <div className="flex justify-center">
+          <ProjectCard
+            title="On the Virtues of Women (latest single)"
+            locationTime="Out now on Spotify"
+            media={
+              <iframe
+                title="Latest single on Spotify"
+                style={{ borderRadius: 12 }}
+                src="https://open.spotify.com/embed/track/0NAB8fCxFzsXwdnQyvfb7p?utm_source=generator&si=3291492d920d459e"
+                width="100%"
+                height="352"
+                frameBorder="0"
+                allowFullScreen
+                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                loading="lazy"
+              />
+            }
+          >
+            <p>
+              My latest single is a quietly furious, sardonic critique of the &ldquo;virtues&rdquo; Chinese women
+              are still taught to embody &mdash; the 三从四德 (Three Obediences and Four Virtues),
+              温良恭俭让 (gentleness, kindness, respect, frugality, deference), the moral code handed down
+              through the 四书五经. The lyrics turn those teachings over with a sarcastic edge: chastity as a
+              lock fastened around the neck, a woman defined by a few careless strokes of someone else&rsquo;s
+              brush, asked to be obedient yet independent, gentle yet self-reliant &mdash; contradictions she is
+              expected to carry without ever crying out. It closes in refusal &mdash; 不满, 不甘, 不堪,
+              discontent, unwilling, unbearable &mdash; and the recognition that &ldquo;she&rdquo; is you, is me, is her.
+            </p>
+            <p className="italic text-gray-600 pt-3">
+              我讲这件事，是为了有一天我们可以再也不用讲这件事。它再次被提起时，只作为历史上的一个锚点，而非正在进行中的抗争。
+            </p>
+            <p className="italic text-gray-700">
+              I tell this story so that one day we will no longer have to &mdash; so that when it is raised again,
+              it stands only as an anchor point in history, and not a struggle still underway.
             </p>
           </ProjectCard>
         </div>
