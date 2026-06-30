@@ -70,7 +70,7 @@ const SWE = () => {
         <div className="flex justify-center">
           <FadeInWhenVisible>
             <ProjectCard
-              title="Codechef Consulting LLC - Junior Software Developer"
+              title="Codechef Consulting LLC - Full-Stack Software Developer"
               locationTime="Los Angeles, CA • April 2025 - Present"
               skills="TypeScript • Next.js • React • React Native"
               media={<AppCarousel apps={codechefApps} />}
